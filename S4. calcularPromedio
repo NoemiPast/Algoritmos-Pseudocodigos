@@ -1,0 +1,7 @@
+Algoritmo calcularPromedio
+	//Solicitar los 5 numeros para promediarlos
+	Escribir "Ingresa 5 numeros para promediarlos, uno por uno"
+	Leer uno,dos,tres,cuatro,cinco
+	//Promediarlos
+	Escribir "El promedio de las 5 calificaciones es: " (uno+dos+tres+cuatro+cinco)/5
+FinAlgoritmo
