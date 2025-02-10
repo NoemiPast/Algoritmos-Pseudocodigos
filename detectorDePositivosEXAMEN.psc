@@ -1,4 +1,4 @@
-Algoritmo detectorDePositivosEXAMEN
+Algoritmo detectorDePositivos
 	Escribir "Ingresar un numero"
 	Leer num
 	//Verificar si es mayor que 0, es decir, positivo
