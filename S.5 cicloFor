@@ -1,0 +1,16 @@
+Algoritmo cicloFor
+	//Estructura de control, que permite ejecutar un numero determinado de veces
+	//Definimos las variables
+	Definir numero, i Como Entero
+	
+	//Pedir al usuario un numero
+	Escribir "Eliga su numero para ver su tabla de multiplicar"
+	Leer numero
+	Escribir "¿Hasta que tabla le gustaria multiplicar?"
+	leer ultimo
+	
+	//Estructura FOR o Para en spanish
+	Para i<-1 Hasta ultimo Con Paso 1 Hacer
+		Escribir "la tabla del " numero, " * ", i, " = ", numero*i
+	Fin Para
+FinAlgoritmo
