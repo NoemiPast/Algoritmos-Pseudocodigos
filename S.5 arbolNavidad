@@ -1,0 +1,41 @@
+Algoritmo arbolNavidad
+		// Realizar un pino con asteriscos
+		
+		Escribir "Ingrese un numero mayor a 4"
+		Leer lineas
+		
+		
+		i <- 1;
+		j <- 1;
+		
+		// calcular tamaño de línea final
+		lineafinal <- 2 * lineas - 1;
+	si lineas < 4 Entonces
+		Escribir "No es un numero valido"
+	SiNo
+			
+	
+		Para i <- 1 Hasta lineas Con Paso 1
+			linea <- "" // linea a agregar
+
+			// Calcular espacios a los lados
+			// La mitad de la resta entre el tamaño de línea final y el tamaño de línea actual sirve para centrar
+			// Espacio de la izquierda y derecha
+			espacios <- trunc ((lineafinal - j) / 2) 
+			
+			Para k <- 1 Hasta espacios Con Paso 1 Hacer
+				linea <- linea + " "
+			FinPara
+			// Agregar símbolos (tamaño de línea actual
+			Para k <- 1 Hasta j Con Paso 1 Hacer
+				linea <- linea + "*"
+			FinPara
+		
+			// Mostrar la linea resultante
+			Escribir linea
+			
+			j <- j + 2
+		FinPara
+		
+FinSi
+FinAlgoritmo
