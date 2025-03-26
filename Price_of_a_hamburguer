@@ -1,0 +1,62 @@
+#Calculate the price of a hamburger
+def cost_unit_pan (pan_pr, pan_pres, pan_uso):
+    return ((pan_pr/pan_pres)*pan_uso)
+
+def cost_unit_car (car_pr, car_pres, car_uso):
+    return ((car_pr/car_pres)*car_uso)
+
+def cost_unit_que (que_pr, que_pres, que_uso):
+    return ((que_pr/que_pres)*que_uso)
+
+def cost_unit_lec (lec_pr, lec_pres, lec_uso):
+    return ((lec_pr/lec_pres)*lec_uso)
+
+def cost_unit_cat (cat_pr, cat_pres, cat_uso):
+    return ((cat_pr/cat_pres)*cat_uso)
+
+def cost_unit_jit (jit_pr, jit_pres, jit_uso):
+    return ((jit_pr/jit_pres)*jit_uso)
+
+print ("Calculo del precio de venta de una hamburguesa")
+print ("Anota la informacion que se te pide (solo numeros)")
+
+pan_pres = float(input("Unidad de compra del pan (pzas) "))
+pan_pr = float(input("Precio del pan "))
+pan_uso = float(input("Unidad de uso del pan (pzas) "))
+
+car_pres = float(input("Unidad de compra de la carne (kg) "))
+car_pr = float(input("Precio de la carne "))
+car_uso = float(input("Unidad de uso de la carne (kg) "))
+
+que_pres = float(input("Unidad de compra del queso "))
+que_pr = float(input("Precio del queso "))
+que_uso = float(input("Unidad de uso del queso "))
+
+lec_pres = float(input("Unidad de compra de la lechuga (pza) "))
+lec_pr = float(input("Precio de la lechuga "))
+lec_uso = float(input("Unidad de uso de la lechuga "))
+
+cat_pres = float(input("Unidad de compra de la catsup (lt) "))
+cat_pr = float(input("Precio de la catsup "))
+cat_uso = float(input("Unidad de uso de la catsup "))
+
+jit_pres = float(input("Unidad de compra del jitomate (kg) "))
+jit_pr = float(input("Precio del jitomate (kg) "))
+jit_uso = float(input("Unidad de uso del jitomate (kg) "))
+
+#Cost unit of each ingredient
+costo_pan = cost_unit_pan(pan_pr, pan_pres, pan_uso)
+costo_carne = cost_unit_car(car_pr, car_pres, car_uso)
+costo_queso = cost_unit_que(que_pr, que_pres, que_uso)
+costo_lechuga = cost_unit_lec(lec_pr, lec_pres, lec_uso)
+costo_catsup = cost_unit_cat(cat_pr, cat_pres, cat_uso)
+costo_jitomate = cost_unit_jit(jit_pr, jit_pres, jit_uso)
+
+#Other costs
+cost_neto = costo_pan + costo_carne + costo_queso + costo_lechuga + costo_catsup + costo_jitomate
+cost_fijos = 0.15   
+utilidad = 0.45
+
+
+print ("El costo neto de la hamburguesa es de: ", cost_neto) 
+print ("El precio suguerido de la hamburguesa es de: ", cost_neto + (cost_neto * cost_fijos) + (cost_neto * utilidad))
